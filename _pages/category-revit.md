@@ -1,6 +1,6 @@
 ---
 title: Revit API
-layout: categories
+layout: archive
 permalink: /categories/revit-api/
 sidebar:
   nav: sidebar
