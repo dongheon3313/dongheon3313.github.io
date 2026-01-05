@@ -1,8 +1,8 @@
 ---
 title: Revit API
-layout: archive
+layout: category
 permalink: /categories/revit-api/
-category: revit-api
+taxonomy: revit-api
 sidebar:
   nav: sidebar
 ---
