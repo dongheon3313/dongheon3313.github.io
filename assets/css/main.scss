@@ -7,3 +7,18 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* 전체 기본 글자 크기 */
+html {
+  font-size: 15px;
+}
+
+/* 본문 글자 크기 미세 조정 */
+.page__content {
+  font-size: 0.95rem;
+}
+
+/* 코드 블록 */
+.highlight pre {
+  font-size: 0.85rem;
+}
