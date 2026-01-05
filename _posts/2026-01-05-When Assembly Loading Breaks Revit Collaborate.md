@@ -1,6 +1,6 @@
 ---
 title: "When Assembly Loading Breaks Revit Collaborate"
-categories: [revit-api]
+categories: revit-api
 tags: [revit, collaborate, worksharing]
 ---
 
