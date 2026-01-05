@@ -2,6 +2,8 @@
 layout: home
 author_profile: false
 header: false
+sidebar:
+  nav: sidebar
 ---
 
 **AI & Revit API case notes.**  
