@@ -20,8 +20,8 @@ rtl                      : # true, false (default) # turns direction of the page
 title                    : "DongHeon Choe / The Building Coder"
 title_separator          : "-"
 subtitle                 : "A customer-focused software developer"
-name                     : DongHeon Choe
-description              : DongHeon Choe's Technical Notes
+name                     : "DongHeon Choe"
+description              : "DongHeon Choe's Technical Notes"
 url                      : "https://dongheon3313.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
