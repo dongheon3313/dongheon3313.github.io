@@ -4,4 +4,5 @@ author_profile: false
 header: false
 ---
 
-**DEPLOY TEST – 2026-01-05 22:41**
+**AI & Revit API case notes.**  
+AI experiments and Revit API cases from day-to-day engineering work.
