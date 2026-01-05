@@ -1,5 +1,5 @@
 intro:
-  - image_path: /assets/images/ai.png
+  - image_path: /assets/images/icons8-ai-48.png
     alt: "AI"
     title: "AI Experiments"
     excerpt: "LLM, automation, 실패와 인사이트"
