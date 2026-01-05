@@ -172,4 +172,4 @@ The fix was not about dependency versions, but about **respecting Revit’s star
 * Avoid loading large dependency trees in `OnStartup()`
 * Treat assembly loading as part of your runtime logic, not initialization
 
-This change made Collaborate fully stable ag
+This change made Collaborate fully stable again.
