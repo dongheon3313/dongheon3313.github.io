@@ -10,3 +10,10 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+sidebar:
+  - title: Topics
+    children:
+      - title: AI
+        url: /categories/ai/
+      - title: Revit API
+        url: /categories/revit-api/
