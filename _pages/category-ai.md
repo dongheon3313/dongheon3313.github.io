@@ -1,6 +1,6 @@
 ---
 title: AI
-layout: categories
+layout: archive
 permalink: /categories/ai/
 sidebar:
   nav: sidebar
