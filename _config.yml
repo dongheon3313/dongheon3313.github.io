@@ -19,9 +19,9 @@ locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "DongHeon Choe / The Building Coder"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "DongHeon Choe"
-description              : "DongHeon Choe's Technical Notes"
+subtitle                 : "A customer-focused software developer"
+name                     : DongHeon Choe
+description              : DongHeon Choe's Technical Notes
 url                      : "https://dongheon3313.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
