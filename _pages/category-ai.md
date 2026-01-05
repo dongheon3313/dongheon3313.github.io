@@ -1,9 +1,7 @@
 ---
 title: AI
-layout: category
+layout: categories
 permalink: /categories/ai/
-taxonomy: categories
-category: ai
 sidebar:
   nav: sidebar
 ---
