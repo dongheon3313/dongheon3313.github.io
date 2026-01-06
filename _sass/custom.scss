@@ -1,5 +1,14 @@
+.page__content {
+  font-size: $type-size-4; // 변수 활용, 필요 시 1.2em 등으로 직접 설정 가능
+}
+
 .page__content p {
   line-height: 1.8;
+  // font-size는 위에서 이미 지정되었으니 필요시만 추가
+}
+
+.sidebar, .sidebar-nav, .sidebar a {
+  font-size: 1.1em;
 }
 
 .highlight code {
@@ -10,12 +19,4 @@
   .page__content {
     font-size: 1.05em;
   }
-}
-
-.sidebar {
-  font-size: 1.1em; // 원하는 크기로 조절
-}
-
-.sidebar-nav {
-  font-size: 1.1em;
 }
