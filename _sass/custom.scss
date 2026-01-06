@@ -1,20 +1,13 @@
-/* 전체 기본 글자 크기 */
-html {
-  font-size: 10px;
-  line-height: 1.55;
+.page__content p {
+  line-height: 1.8;
 }
 
-body {
-  font-size: 1rem;
-  line-height: 1.6;
+.highlight code {
+  font-size: 0.9em;
 }
 
-/* 본문 */
-.page__content {
-  font-size: 0.7rem;
-}
-
-/* 코드 블록 */
-.highlight pre {
-  font-size: 0.7rem;
+@media (max-width: 768px) {
+  .page__content {
+    font-size: 1.05em;
+  }
 }
