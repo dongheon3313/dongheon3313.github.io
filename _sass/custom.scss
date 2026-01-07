@@ -1,27 +1,29 @@
-h1 { 
-    font-size: 1.3em;
-}
-
-.page__meta, .comment__date {
-    font-size: 0.8em;
-}
-
-h2 { 
+/* 제목 크기 조정 */
+h1 {
     font-size: 1.3em;
 }
 
 h2 {
-    font-size: 0.9em;
+    font-size: 0.9em; /* 원하는 값으로 조정 */
 }
 
+h3 {
+    font-size: 0.8em;
+}
+
+/* 제목 공통 마진 */
 h1, h2, h3, h4, h5, h6 {
     margin: 1em 0 0.5em;
 }
 
-.page__content p, .page__content li, .page__content dl {
+/* 메타 정보 및 댓글 날짜 크기 */
+.page__meta, .comment__date {
     font-size: 0.8em;
 }
 
-h3 {
+/* 본문 문단 및 리스트 글자 크기 */
+.page__content p,
+.page__content li,
+.page__content dl {
     font-size: 0.8em;
 }
