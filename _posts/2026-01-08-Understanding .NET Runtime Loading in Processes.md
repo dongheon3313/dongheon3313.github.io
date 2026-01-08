@@ -2,8 +2,13 @@
 title: "[Basics]Understanding .NET Runtime Loading in Processes"
 categories: dotnet
 tags: [Basic, CSharp]
+layout: single
+share: false
 ---
 
+**Previous Post**: [[Basics]Understanding Operating Systems, Processes, and Runtime Environments](https://dongheon3313.github.io/dotnet/Understanding-Operating-Systems,-Processes,-and-Runtime-Environments/)  
+
+---
 ## How Runtime is Determined When a Process Starts
 
 When a process starts up, the runtime is either "loaded" or "determined" as shown below. In other words, the runtime can be determined at "build time" or at "load time."
@@ -41,4 +46,7 @@ The CLR is determined at **execution/load time** for:
 
 ### Native AOT EXE
 - **Pros**: Includes only the minimal runtime required, enabling the **fastest startup** time
-- **Cons**: Limited reflection and dynamic capabilities
+- **Cons**: Limited reflection and dynamic capabilities  
+
+---
+**Next Post**: [[Basics]Understanding .NET Process Architecture: Modules, AppDomains, and Assemblies](https://dongheon3313.github.io/dotnet/Understanding-.NET-Process-Architecture-Modules,-AppDomains,-and-Assemblies/)
