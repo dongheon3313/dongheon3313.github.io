@@ -4,6 +4,10 @@ categories: dotnet
 tags: [Basic, CSharp]
 ---
 
+{% if page.previous %}
+Previous Post : [[Basics]Understanding C# Build Outputs](https://dongheon3313.github.io/dotnet/Understanding-C-Build-Outputs/)
+{% endif %}
+
 ## OS, Processes, and Runtime
 
 **Process**: A single program in execution  
