@@ -46,6 +46,4 @@ Put differently:
 The fundamental difference between an EXE and a DLL lies not in the *file format*, but in *whether it can start a process or not*.  
   
   
-{% if page.next %}
 **Next Post**: [[Basics]Understanding Operating Systems, Processes, and Runtime Environments](https://dongheon3313.github.io/dotnet/Understanding-Operating-Systems,-Processes,-and-Runtime-Environments/)
-{% endif %}
