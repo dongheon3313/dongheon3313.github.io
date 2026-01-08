@@ -1,5 +1,5 @@
 ---
-title: "[Basics]Using LLMs in Day-to-Day Engineering Work"
+title: "[Basics]Understanding C# Build Outputs"
 categories: dotnet
 tags: [Basic, CSharp]
 ---
