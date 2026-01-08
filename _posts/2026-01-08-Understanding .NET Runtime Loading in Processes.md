@@ -9,6 +9,8 @@ share: false
 **Previous Post**: [[Basics]Understanding Operating Systems, Processes, and Runtime Environments](https://dongheon3313.github.io/dotnet/Understanding-Operating-Systems,-Processes,-and-Runtime-Environments/)  
   
 ---
+<br />
+
 ## How Runtime is Determined When a Process Starts
 
 When a process starts up, the runtime is either "loaded" or "determined" as shown below. In other words, the runtime can be determined at "build time" or at "load time."
@@ -22,6 +24,7 @@ When a process starts up, the runtime is either "loaded" or "determined" as show
  ├─ mscorlib.dll
  └─ Other modules
 ```
+<br />
 
 ## Runtime Determination by Deployment Type
 
@@ -37,7 +40,8 @@ The CLR (Common Language Runtime) is determined at **build time** for:
 The CLR is determined at **execution/load time** for:
 - .NET Core / .NET 5+ based EXE or DLL files
 - More precisely, the runtime is determined by searching for installed runtimes on the system
-  
+<br />
+
 ## Deployment Model Comparison
 
 ### Self-contained EXE
@@ -47,6 +51,7 @@ The CLR is determined at **execution/load time** for:
 ### Native AOT EXE
 - **Pros**: Includes only the minimal runtime required, enabling the **fastest startup** time
 - **Cons**: Limited reflection and dynamic capabilities  
+<br />
 
 ---
 **Next Post**: [[Basics]Understanding .NET Process Architecture: Modules, AppDomains, and Assemblies](https://dongheon3313.github.io/dotnet/Understanding-.NET-Process-Architecture-Modules,-AppDomains,-and-Assemblies/)
