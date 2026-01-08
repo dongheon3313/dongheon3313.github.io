@@ -9,6 +9,8 @@ share: false
 **Previous Post**: [[Basics]Understanding .NET Runtime Loading in Processes](https://dongheon3313.github.io/dotnet/Understanding-.NET-Runtime-Loading-in-Processes/)  
 
 ---
+<br />
+
 ## Key Terminology
 
 To clarify these concepts, let's review the explanation of each term below.
@@ -45,6 +47,5 @@ Therefore, the relationship is: **[Process : CLR] = [1 : 0] or [1 : 1]**
 
 ### Key Points
 
-- **A single process can have at most one CLR**, and when the CLR is loaded, it has one or more AppDomains.
-
-- **Resource management of AppDomains is entirely handled by clr.dll**, and the OS only considers clr.dll as the target for resource management. 
+**A single process can have at most one CLR**, and when the CLR is loaded, it has one or more AppDomains.  
+**Resource management of AppDomains is entirely handled by clr.dll**, and the OS only considers clr.dll as the target for resource management. 
