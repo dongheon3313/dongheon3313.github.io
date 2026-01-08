@@ -2,8 +2,13 @@
 title: "[Basics]Understanding .NET Process Architecture: Modules, AppDomains, and Assemblies"
 categories: dotnet
 tags: [Basic, CSharp]
+layout: single
+share: false
 ---
 
+**Previous Post**: [[Basics]Understanding .NET Runtime Loading in Processes](https://dongheon3313.github.io/dotnet/Understanding-.NET-Runtime-Loading-in-Processes/)  
+
+---
 ## Key Terminology
 
 To clarify these concepts, let's review the explanation of each term below.
@@ -42,4 +47,4 @@ Therefore, the relationship is: **[Process : CLR] = [1 : 0] or [1 : 1]**
 
 - **A single process can have at most one CLR**, and when the CLR is loaded, it has one or more AppDomains.
 
-- **Resource management of AppDomains is entirely handled by clr.dll**, and the OS only considers clr.dll as the target for resource management.
+- **Resource management of AppDomains is entirely handled by clr.dll**, and the OS only considers clr.dll as the target for resource management. 
