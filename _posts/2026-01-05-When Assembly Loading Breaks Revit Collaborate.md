@@ -90,10 +90,9 @@ This polluted the AppDomain and assembly resolution state **before** `RevitWorke
 
 As a result:
 
-* RevitWorker failed to initialize its `ExternalDBApplication`s
-* Collaborate aborted with:
-
-  > *Initiate Collaboration failed*
+- RevitWorker failed to initialize its `ExternalDBApplication`s
+- Collaborate aborted with:
+> *Initiate Collaboration failed*
 
 ---
 
