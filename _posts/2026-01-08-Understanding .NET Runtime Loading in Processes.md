@@ -52,6 +52,7 @@ The CLR is determined at **execution/load time** for:
 - **Pros**: Includes only the minimal runtime required, enabling the **fastest startup** time
 - **Cons**: Limited reflection and dynamic capabilities  
 <br />
+<br />
 
 ---
 **Next Post**: [[Basics]Understanding .NET Process Architecture: Modules, AppDomains, and Assemblies](https://dongheon3313.github.io/dotnet/Understanding-.NET-Process-Architecture-Modules,-AppDomains,-and-Assemblies/)
