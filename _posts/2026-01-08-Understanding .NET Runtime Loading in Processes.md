@@ -7,12 +7,12 @@ share: false
 ---
 
 **Previous Post**: [[Basics]Understanding Operating Systems, Processes, and Runtime Environments](https://dongheon3313.github.io/dotnet/Understanding-Operating-Systems,-Processes,-and-Runtime-Environments/)  
-
+  
 ---
 ## How Runtime is Determined When a Process Starts
 
 When a process starts up, the runtime is either "loaded" or "determined" as shown below. In other words, the runtime can be determined at "build time" or at "load time."
-
+  
 ### Process Structure
 
 ```
@@ -37,7 +37,7 @@ The CLR (Common Language Runtime) is determined at **build time** for:
 The CLR is determined at **execution/load time** for:
 - .NET Core / .NET 5+ based EXE or DLL files
 - More precisely, the runtime is determined by searching for installed runtimes on the system
-
+  
 ## Deployment Model Comparison
 
 ### Self-contained EXE
