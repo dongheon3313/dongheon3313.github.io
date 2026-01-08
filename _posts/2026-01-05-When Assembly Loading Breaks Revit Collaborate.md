@@ -4,7 +4,7 @@ categories: revit-api
 tags: [revit, collaborate, worksharing]
 ---
 
-# Problem
+## Problem
 
 After installing my Revit Add-in, **Collaborate / Worksharing initialization failed** with the following message:
 
@@ -21,7 +21,7 @@ The problem had to be **inside the add-in loading process itself**.
 
 ---
 
-# Journal Clues
+## Journal Clues
 
 In the Revit journal, I repeatedly found these lines:
 
@@ -38,7 +38,7 @@ In reality, **this log is a symptom, not the root cause**.
 
 ---
 
-# My Original Add-in Architecture
+## My Original Add-in Architecture
 
 My add-in was structured like this:
 
@@ -66,7 +66,7 @@ The loader DLL dynamically loaded:
 
 ---
 
-# What Actually Went Wrong
+## What Actually Went Wrong
 
 The real issue was **not package versions**.
 
@@ -74,19 +74,17 @@ The issue was:
 
 > **Too many assemblies were being loaded too early, during Revit startup.**
 
-## Why this breaks Collaborate
+### Why this breaks Collaborate
 
-* Revit starts multiple processes during Collaborate initialization
+Revit starts multiple processes during Collaborate initialization :
+* `Revit.exe` (UI process)
+* `RevitWorker.exe` (background process for collaboration)
 
-  * `Revit.exe` (UI process)
-  * `RevitWorker.exe` (background process for collaboration)
+`OnStartup()` runs **before Revit reaches a stable state**
 
-* `OnStartup()` runs **before Revit reaches a stable state**
-
-* My loader DLL aggressively loaded:
-
-  * A large number of managed assemblies
-  * Assemblies that themselves trigger further dependency resolution
+My loader DLL aggressively loaded:
+* A large number of managed assemblies
+* Assemblies that themselves trigger further dependency resolution
 
 This polluted the AppDomain and assembly resolution state **before** `RevitWorker` finished initializing its own internal components.
 
@@ -99,7 +97,7 @@ As a result:
 
 ---
 
-# Why Removing Some DLLs Broke the UI
+## Why Removing Some DLLs Broke the UI
 
 I tried another experiment:
 
@@ -120,7 +118,7 @@ Revit does not show an error dialog — it simply ignores the add-in.
 
 ---
 
-# Key Insight
+## Key Insight
 
 > **The problem was not *what* assemblies were loaded, but *when* and *how many* were loaded.**
 
@@ -132,11 +130,11 @@ Even perfectly compatible packages can break Revit if:
 
 ---
 
-# Final Fix
+## Final Fix
 
 I changed the architecture to follow a strict separation of responsibilities.
 
-## ✔ What stays in the Revit Entry DLL
+### ✔ What stays in the Revit Entry DLL
 
 * Only Revit API references
 * Ribbon / UI registration
@@ -144,7 +142,7 @@ I changed the architecture to follow a strict separation of responsibilities.
 
 No heavy third-party dependencies.
 
-## ✔ What moves out of startup
+### ✔ What moves out of startup
 
 * Heavy libraries (OpenXML, Excel, WebView2, etc.)
 * Large dependency graphs
@@ -156,7 +154,7 @@ These are now:
 
 ---
 
-# Takeaway
+## Takeaway
 
 > **In Revit Add-ins, assembly loading itself is an operation with side effects.**
 >
@@ -166,7 +164,7 @@ The fix was not about dependency versions, but about **respecting Revit’s star
 
 ---
 
-# Practical Rule of Thumb
+## Practical Rule of Thumb
 
 * Keep the add-in entry DLL *extremely lightweight*
 * Avoid loading large dependency trees in `OnStartup()`
