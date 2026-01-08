@@ -9,6 +9,8 @@ share: false
 **Previous Post**: [[Basics]Understanding C# Build Outputs](https://dongheon3313.github.io/dotnet/Understanding-C-Build-Outputs/)  
 
 ---
+<br />
+
 ## OS, Processes, and Runtime
 
 **Process**: A single program in execution  
@@ -72,6 +74,7 @@ At first glance, a runtime may appear similar to an interpreter, but their relat
 
 - **Interpreter**: “Interpreter”  
 - **Runtime**: “Interpreter + driver + seatbelt + navigation system + mechanic”  
+<br />
 
 ---
 **Next Post**: [[Basics]Understanding .NET Runtime Loading in Processes](https://dongheon3313.github.io/dotnet/Understanding-.NET-Runtime-Loading-in-Processes/)
