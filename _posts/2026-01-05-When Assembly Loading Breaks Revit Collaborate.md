@@ -4,7 +4,7 @@ categories: revit-api
 tags: [revit, collaborate, worksharing]
 ---
 
-## Problem
+# Problem
 
 After installing my Revit Add-in, **Collaborate / Worksharing initialization failed** with the following message:
 
