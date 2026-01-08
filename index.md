@@ -6,6 +6,5 @@ sidebar:
   nav: sidebar
 ---
 
-**AI & Revit API case notes.**  
-AI experiments and Revit API cases  
-from day-to-day engineering work.
+**AI & .NET case notes**
+Practical issues and solutions from real-world engineering work.
