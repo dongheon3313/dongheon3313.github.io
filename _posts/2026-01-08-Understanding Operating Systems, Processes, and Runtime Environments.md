@@ -5,9 +5,10 @@ tags: [Basic, CSharp]
 ---
 
 {% if page.previous %}
-Previous Post : [[Basics]Understanding C# Build Outputs](https://dongheon3313.github.io/dotnet/Understanding-C-Build-Outputs/)
-{% endif %}
-
+**Previous Post**: [[Basics]Understanding C# Build Outputs](https://dongheon3313.github.io/dotnet/Understanding-C-Build-Outputs/)
+{% endif %}  
+  
+  
 ## OS, Processes, and Runtime
 
 **Process**: A single program in execution  
@@ -70,4 +71,9 @@ As shown in the diagrams above, taking C# as an example, build artifacts such as
 At first glance, a runtime may appear similar to an interpreter, but their relationship is one of *containment* (interpreter ⊂ runtime):
 
 - **Interpreter**: “Interpreter”  
-- **Runtime**: “Interpreter + driver + seatbelt + navigation system + mechanic”
+- **Runtime**: “Interpreter + driver + seatbelt + navigation system + mechanic”  
+  
+  
+{% if page.next %}
+**Next Post**: [[Basics]Understanding .NET Runtime Loading in Processes](https://dongheon3313.github.io/dotnet/Understanding-.NET-Runtime-Loading-in-Processes/)
+{% endif %}
