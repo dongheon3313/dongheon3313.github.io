@@ -1,3 +1,9 @@
+---
+title: "[Basics]Using LLMs in Day-to-Day Engineering Work"
+categories: dotnet
+tags: [Basic, CSharp]
+---
+
 ## C# and Build Artifacts
 
 When we write code and go through the build process, the following flow takes place.
