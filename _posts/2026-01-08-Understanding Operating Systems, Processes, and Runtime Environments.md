@@ -8,7 +8,8 @@ share: false
 ---
 
 **Previous Post**: [[Basics]Understanding C# Build Outputs](https://dongheon3313.github.io/dotnet/Understanding-C-Build-Outputs/)  
-  
+
+---
 ## OS, Processes, and Runtime
 
 **Process**: A single program in execution  
