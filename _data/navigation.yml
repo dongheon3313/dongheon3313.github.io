@@ -15,7 +15,7 @@ sidebar:
     children:
       - title: AI
         url: /categories/ai/
-      - title: Dotnet
+      - title: .NET
         url: /categories/dotnet/  
       - title: Revit Addin
         url: /categories/revit-addin/
