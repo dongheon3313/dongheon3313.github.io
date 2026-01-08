@@ -2,6 +2,7 @@
 title: "[Basics]Understanding C# Build Outputs"
 categories: dotnet
 tags: [Basic, CSharp]
+layout: single
 ---
 
 ## C# and Build Artifacts
