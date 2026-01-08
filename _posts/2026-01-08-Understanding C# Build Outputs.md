@@ -45,5 +45,5 @@ The fundamental difference between an EXE and a DLL lies not in the *file format
   
   
 {% if page.next %}
-**Next Post**: [[Basics]Understanding Operating Systems, Processes, and Runtime Environments](dongheon3313.github.io/dotnet/Understanding-Operating-Systems,-Processes,-and-Runtime-Environments/)
+**Next Post**: [[Basics]Understanding Operating Systems, Processes, and Runtime Environments](https://dongheon3313.github.io/dotnet/Understanding-Operating-Systems,-Processes,-and-Runtime-Environments/)
 {% endif %}
