@@ -15,5 +15,7 @@ sidebar:
     children:
       - title: AI
         url: /categories/ai/
-      - title: Revit API
-        url: /categories/revit-api/
+      - title: .NET App
+        url: /categories/dotnet-app/  
+      - title: Revit AddIn
+        url: /categories/revit-addin/
