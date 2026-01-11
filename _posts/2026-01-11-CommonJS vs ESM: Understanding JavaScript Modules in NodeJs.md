@@ -1,7 +1,7 @@
 ---
-title: "[Basics]Understanding .NET Process Architecture: Modules, AppDomains, and Assemblies"
-categories: dotnet
-tags: [Basic, CSharp]
+title: "[Basics]CommonJS vs ESM: Understanding JavaScript Modules in NodeJs"
+categories: js
+tags: [Basic, JavaScript]
 layout: single
 share: false
 ---
