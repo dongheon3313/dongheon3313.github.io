@@ -17,5 +17,7 @@ sidebar:
         url: /categories/ai/
       - title: .NET
         url: /categories/dotnet/  
+      - title: JavaScript
+        url: /categories/js/
       - title: Revit Addin
         url: /categories/revit-addin/
