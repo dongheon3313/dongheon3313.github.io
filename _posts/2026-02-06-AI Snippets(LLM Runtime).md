@@ -40,6 +40,8 @@ It is **not part of the AI model itself**, but an optional external dependency u
 
 CURL is optional and can be enabled/disabled via **CMake build options**.
 
+**Reference Post**: [[Snippets]Build & Toolchain](https://dongheon3313.github.io/dotnet/Understanding-C-Build-Outputs/)  
+
 ### Why use CURL?
 - Supports multiple protocols (HTTP / HTTPS / FTP, etc.)
 - Handles streaming / chunked responses
