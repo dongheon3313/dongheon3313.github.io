@@ -1,5 +1,5 @@
 ---
-title: "[Snippets]AI Snippets: LLM Runtime"
+title: "[Snippets]LLM Runtime"
 categories: ai
 tags: [Snippets, AI]
 layout: single
