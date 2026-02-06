@@ -1,5 +1,5 @@
 ---
-title: "[Snippets]AI Snippets: Model Architecture, Inference Theory"
+title: "[Snippets]AI Snippets: Inference Theory"
 categories: ai
 tags: [Snippets, AI]
 layout: single
