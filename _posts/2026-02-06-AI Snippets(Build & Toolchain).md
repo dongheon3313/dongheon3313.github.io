@@ -1,5 +1,5 @@
 ---
-title: "[Snippets]AI Snippets: Build & Toolchain"
+title: "[Snippets]Build & Toolchain"
 categories: ai
 tags: [Snippets, AI]
 layout: single
