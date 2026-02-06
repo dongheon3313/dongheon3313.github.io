@@ -32,8 +32,10 @@ share: false
 - Neural networks specialized for **image processing**
 - Repeatedly detects **local features**
 - Small filters (kernels) slide across the image and detect:
-  - “There is a line here”
-  - “There is a corner here”
+1) “There is a line here”
+2) “There is a corner here”
+   
+<br>
 
 **Excels at**
 - Edge detection
@@ -44,8 +46,7 @@ share: false
 
 ### Transformer
 - Processes the entire input at once using **Self-Attention**
-- Core question:
-  > “How strongly is this token related to other tokens?”
+- Core question: “How strongly is this token related to other tokens?”
 
 **Excels at**
 - Text understanding and generation
@@ -76,12 +77,14 @@ share: false
 ## 3. Weight Formats (How Trained Numbers Are Stored)
 
 ### PyTorch Family
-- `.safetensors`
-  - Modern standard
-  - Safe (no arbitrary code execution)
-  - Fast loading
-- `.bin`
-  - Legacy PyTorch format
+**.safetensors**
+1. Modern standard
+2. Safe (no arbitrary code execution)
+3. Fast loading
+
+**.bin**
+1. Legacy PyTorch format
+<br>
 
 > Hugging Face `transformers` typically expects these formats
 
@@ -164,9 +167,9 @@ Runtimes are typically designed **for specific weight formats**, which is why
 ### OpenVINO
 - Intel’s inference toolkit
 - Optimized for:
-  - Intel CPU
-  - iGPU
-  - VPU (low-power accelerators)
+1. Intel CPU
+2. iGPU
+3. VPU (low-power accelerators)
 
 **Strengths**
 - Excellent CPU performance
