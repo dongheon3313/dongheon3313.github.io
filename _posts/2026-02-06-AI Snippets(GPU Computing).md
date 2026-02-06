@@ -1,5 +1,5 @@
 ---
-title: "[Snippets]GPU Computing, Acceleration Stack"
+title: "[Snippets]GPU Computing"
 categories: ai
 tags: [Snippets, AI]
 layout: single
