@@ -1,5 +1,5 @@
 ---
-title: "[Snippets]AI Snippets: Data Representation, Memory & Interop"
+title: "[Snippets]AI Snippets: Data & Memory"
 categories: ai
 tags: [Snippets, AI]
 layout: single
