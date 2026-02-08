@@ -6,12 +6,12 @@ layout: single
 share: false
 ---
 
-If you’ve ever tried to use `import` / `export` in a Node.js project and were greeted with confusing errors, you’re not alone.  
-This confusion usually comes from not understanding **JavaScript module systems**—specifically **CommonJS** and **ES Modules (ESM)**.
+If you’ve ever tried to use `import` / `export` in a Node.js project and were greeted with confusing errors,  
+this confusion usually comes from not understanding **JavaScript module systems**—specifically **CommonJS** and **ES Modules (ESM)**.
 
 This article explains **why these two systems exist**, **how they differ**, and **what practical impact they have on your code today**.
 
-## Why Do We Need Modules in JavaScript?
+## Why Modules Are Needed in JavaScript
 
 In the early days, JavaScript had **no module system**.
 
@@ -85,7 +85,7 @@ So the JavaScript community introduced a **standard module system**.
 
 ---
 
-## What Is ESM (ECMAScript Modules)?
+## The Emergence of ESM (ECMAScript Modules)
 
 **ES Modules (ESM)** were officially introduced in **ES2015 (ES6)**.
 
@@ -121,7 +121,7 @@ import { add } from "./math.js";
 
 ---
 
-## CommonJS vs ESM: Side-by-Side
+## CommonJS vs ESM
 
 | Category          | CommonJS         | ESM              |
 | ----------------- | ---------------- | ---------------- |
@@ -131,6 +131,9 @@ import { add } from "./math.js";
 | Exports           | `module.exports` | `export`         |
 | Tree-shaking      | ❌                | ✅                |
 | Top-level `await` | ❌                | ✅                |
+
+> Tree-shaking: An optimization that removes unused code (dead code) during the bundling process.
+> Top-level await: Allows the use of await at the top level of a module, outside of any function. 
 
 ---
 
