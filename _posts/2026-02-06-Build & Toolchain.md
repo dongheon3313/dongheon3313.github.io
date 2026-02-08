@@ -1,7 +1,7 @@
 ---
-title: "[Snippets]Build & Toolchain"
+title: "[Basics]Build & Toolchain"
 categories: ai
-tags: [Snippets, AI]
+tags: [Basic, AI]
 layout: single
 share: false
 ---
