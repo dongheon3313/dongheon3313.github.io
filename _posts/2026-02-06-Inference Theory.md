@@ -106,3 +106,21 @@ When the outputs of all heads are combined, the model forms a **richer and more 
 
 👉 Multi-Head Attention allows the model to understand language **from several angles simultaneously**, rather than through a single relational lens.
 
+---
+
+## Core Concept
+Inside the Transformer, there is one single concept called **Attention**,
+and depending on the situation and location, several different forms of Attention are used at the same time.
+<br>
+
+> **In other words, they are not separate/different techniques → they are simply variations of the same Attention mechanism.**
+<br>
+
+| Term                  | Meaning                                                                | Where it is used                                |
+| --------------------- | ---------------------------------------------------------------------- | ----------------------------------------------- |
+| Self-Attention        | Computes relationships between tokens within the same sequence         | "Encoder, Decoder"                              |
+| Masked Self-Attention | Self-Attention that prevents attending to future tokens                | Decoder / GPT                                   |
+| Cross-Attention       | Attends to a different sequence (usually the Encoder output)           | Decoder in Encoder–Decoder architectures        |
+| Multi-Head Attention  | Performs multiple attention operations in parallel                     | All Transformer models                          |
+| FlashAttention        | An algorithm that significantly speeds up attention computation        | Implementation / performance optimization level |
+
