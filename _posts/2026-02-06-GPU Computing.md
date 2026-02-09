@@ -1,7 +1,7 @@
 ---
-title: "[Snippets]GPU Computing"
+title: "[Basics]GPU Computing"
 categories: ai
-tags: [Snippets, AI]
+tags: [Basic, AI]
 layout: single
 share: false
 ---
