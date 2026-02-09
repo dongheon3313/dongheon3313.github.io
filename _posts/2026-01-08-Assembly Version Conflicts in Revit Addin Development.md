@@ -1,5 +1,5 @@
 ---
-title: "[Must-Knows]Understanding Assembly Version Conflicts in Revit Addin Development"
+title: "[Must-Knows]Assembly Version Conflicts in Revit Addin Development"
 categories: revit-addin
 tags: [CSharp, Revit, Third-Party]
 layout: single
