@@ -1,5 +1,5 @@
 ---
-title: "[Basics]Understanding C# Build Outputs"
+title: "[Basics]C# Build Outputs"
 categories: dotnet
 tags: [Basic, CSharp]
 layout: single
