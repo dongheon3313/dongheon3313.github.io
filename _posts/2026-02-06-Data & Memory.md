@@ -1,7 +1,7 @@
 ---
-title: "[Snippets]Data & Memory"
+title: "[Basics]Data & Memory"
 categories: ai
-tags: [Snippets, AI]
+tags: [Basic, AI]
 layout: single
 share: false
 ---
