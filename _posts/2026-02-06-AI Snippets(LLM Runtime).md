@@ -1,7 +1,7 @@
 ---
-title: "[Snippets]LLM Runtime"
+title: "[Basics]LLM Runtime"
 categories: ai
-tags: [Snippets, AI]
+tags: [Basic, AI]
 layout: single
 share: false
 ---
