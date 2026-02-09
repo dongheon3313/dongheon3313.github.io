@@ -1,7 +1,7 @@
 ---
-title: "[Snippets]Inference Theory"
+title: "[Basics]Inference Theory"
 categories: ai
-tags: [Snippets, AI]
+tags: [Basic, AI]
 layout: single
 share: false
 ---
