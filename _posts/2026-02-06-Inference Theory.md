@@ -28,8 +28,6 @@ Token → Embedding (static meaning)
 
 > "The bank is near the river"
 
----
-
 **1) Token → Embedding (no context yet)**
 At this stage, each token only contains its independent lexical meaning.
 
@@ -37,8 +35,6 @@ At this stage, each token only contains its independent lexical meaning.
 * river → [0.55, 0.11, ...]
 
 The vector for **bank** does not yet know whether it refers to a financial institution or a riverside.
-
----
 
 **2) Self-Attention (Layer 1) → Attention layer output**
 Now tokens begin to interact. The model computes how strongly each token relates to others.
@@ -49,8 +45,6 @@ Now tokens begin to interact. The model computes how strongly each token relates
 
 This is where context begins to shape interpretation.
 
----
-
 **3) Repeated across multiple layers → Contextual vector (final meaning)**
 As attention layers stack deeper, the representation becomes progressively more refined.
 
@@ -59,6 +53,8 @@ As attention layers stack deeper, the representation becomes progressively more 
 * **Later layers** → form higher-level and abstract meaning
 
 By the final layer, **bank**
+
+**Related Post**: [[Basics]The Emergence of Meaning in Transformer Embeddings](https://dongheon3313.github.io/ai/The-Emergence-of-Meaning-in-Transformer-Embeddings/)
 
 ---
 
