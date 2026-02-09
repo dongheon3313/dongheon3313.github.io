@@ -1,12 +1,12 @@
 ---
-title: "[Basics]Inference Theory"
+title: "[Basics]Attention"
 categories: ai
 tags: [Basic, AI]
 layout: single
 share: false
 ---
 
-## Attention
+## Definition
 
 **Attention**: A mechanism that computes how strongly each token in a sequence relates to other tokens in the same sequence.
 
