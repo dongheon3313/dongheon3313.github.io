@@ -1,5 +1,5 @@
 ---
-title: "[Basics]Understanding Operating Systems, Processes, and Runtime Environments"
+title: "[Basics]Operating Systems, Processes, and Runtime Environments"
 categories: dotnet
 tags: [Basic, CSharp]
 layout: single
