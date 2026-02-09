@@ -1,5 +1,5 @@
 ---
-title: "[Basics]Embedding and attention"
+title: "[Basics]The Emergence of Meaning in Transformer Embeddings"
 categories: ai
 tags: [Basic, AI]
 layout: single
