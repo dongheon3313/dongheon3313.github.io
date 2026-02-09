@@ -104,6 +104,40 @@ When the outputs of all heads are combined, the model forms a **richer and more 
 
 ---
 
+## Masked Self-Attention (also called Causal Self-Attention)
+
+Masked Self-Attention is a modified version of standard Self-Attention that **prevents the model from looking at future tokens** during processing.  
+
+It enforces a strict left-to-right (causal) information flow:  
+each position can only attend to itself and all positions **before** it — never to any position after it.
+
+**Why it is needed**  
+In autoregressive language modeling (e.g. GPT-style models), the model must generate text one token at a time.  
+When predicting the next token, it is **not allowed to cheat** by seeing what comes later in the sequence.  
+Masked Self-Attention guarantees that the prediction for position *i* depends **only on tokens 1 through i**.
+
+**How the masking works (mechanically)**  
+During the attention score computation:
+
+1. Compute the raw attention scores (Q × Kᵀ) as usual  
+2. Apply a **mask** to the score matrix:  
+   - All positions where the query can **not** attend (i.e. future positions j > i) are set to a **very large negative value** (e.g. -1e9 or -∞)  
+   - This is usually done with a **triangular mask** (upper triangle including or excluding the diagonal depending on implementation)
+
+3. After masking → apply softmax  
+   → Future positions receive **softmax probability ≈ 0**  
+   → Effectively, no information flows forward in time
+
+**Where it is used**  
+- **Decoder-only models** (GPT, LLaMA, PaLM, Grok, etc.) → **all** self-attention layers are masked  
+- **Encoder–Decoder models** (original Transformer, T5, BART) → only in the **Decoder** self-attention layers  
+  (The Encoder uses unmasked / bidirectional Self-Attention)
+
+**Summary**  
+Masked Self-Attention = Self-Attention + future-masking → enforces autoregressive / causal generation by making sure no token can “see” anything that comes after it.
+
+---
+
 ## Core Concept
 Inside the Transformer, there is one single concept called **Attention**,
 and depending on the situation and location, several different forms of Attention are used at the same time.
