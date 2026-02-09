@@ -74,3 +74,35 @@ Split data into small tiles and process them inside fast on-chip GPU memory (SRA
 
 **2. Recomputation**  
 Instead of storing large intermediate results in slow memory, recompute them when needed.  
+
+---
+
+## Multi-Head Attention
+
+Using only a single self-attention mechanism allows the model to capture **one dominant type of relationship** at a time — for example, syntax, semantics, or long-range dependency.
+However, natural language contains **multiple relationships simultaneously**, and understanding requires modeling them together.
+
+These relationships can be viewed in different ways:
+
+* **Syntactic relationships** → subject–verb agreement, grammatical structure
+* **Semantic relationships** → synonyms, similar concepts, related meanings
+* **Coreference** → resolving references such as *“it” → “animal”*
+* **Long-range dependencies** → connections between distant parts of a sentence
+
+To capture these diverse patterns, Transformers use **multiple attention mechanisms in parallel**, known as **Multi-Head Attention**.
+
+### Different Heads, Different Focus
+
+Each attention head learns to specialize in a different type of relationship.
+
+**Example specialization**
+
+* **Head 1** → syntactic structure
+* **Head 2** → semantic similarity
+* **Head 3** → long-range connections
+* **Head 4** → coreference resolution
+
+When the outputs of all heads are combined, the model forms a **richer and more expressive representation**, integrating multiple linguistic perspectives at once.
+
+👉 Multi-Head Attention allows the model to understand language **from several angles simultaneously**, rather than through a single relational lens.
+
